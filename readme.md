@@ -1,12 +1,5 @@
-# [Join Tortoolkit Group for DEMO](https://t.me/TorToolKit)
-
-# TorToolkit Telegram
-So basically Tortoolkit is aimed to be the most versatile torrent leecher and Youtube-DL bot for telegram. This bot is highly customizable and to customize this bot you don't need to restart the bot every time. 
-The bot gets started with minimum variables and others can be set as and when needed using the /settings.
-
-## Use master/beta branch for stable performance.
-## The Alpha branch is still in testing and is meant for testers. Soon a stable of this version will come out.
-
+# Relaykit Telegram
+RelayKit (formerly TorToolkit) is a versatile bot that can download content from across the internet and sync it to the cloud. It is highly customizable, and most settings can be changed without restarting the bot.
 
 ## For any help join this:- [TTKDISC](https://t.me/ttkdisc)
 
@@ -42,16 +35,16 @@ Table of Content
 
 # Features
 Following are some awesome features offered by this bot:-
-- Using the best torrent client to deal with torrent : [qBittorrent](https://github.com/qbittorrent/qBittorrent)
-- You can choose which files you want to download from the torrent.
+- Using the best p2p client : [qBittorrent](https://github.com/qbittorrent/qBittorrent)
+- You can choose which files you want to download.
 - A glorious settings menu from you can control the bot.
 - If the bot is in the group, the users have their own settings like:
   - Permanent thumbnail support.
   - Users can choose if they want a file or video.
-  - Load in their own rclone config so that the torrent/direct link is uploaded to their drive. (Work in Progress)
+  - Load in their own rclone config so that the direct link is uploaded to their drive. (Work in Progress)
 - Extraction of ZIP, TAR, ISO, RAR wih and without password. If you chose to extarct the archive and you enter the password wrong it will prompt you to enter the password upto 3 times after that zip will be uploaded as it is.
 - G Drive Index support.
-- Admins can put hard limits on the max torrent size and max youtube playlist size.
+- Admins can put hard limits on the max file size and max youtube playlist size.
 - Aria2 for direct links download.
 - Upload to gdrive by using RCLONE.
   - You can load multiple drives in the conf and can switch on fly using the settings.
@@ -177,7 +170,7 @@ Steps:-
 - `BASE_URL_OF_BOT`
   - Values :- Valid BASE URL of where the bot is deploy. Ip/domain of your bot like "http://myip" or if oy have chosen other port then 80 then "http://myip:port". No slash at the end.
   - Default Value :- `""`
-  - Use :- This is used for file selection of the torrent.
+  - Use :- This is used for file selection
 
 - `ALD_USR`
   - Values :- It is a list of IDs of all the allowed groups and useres who can use this bot in private. 
@@ -198,7 +191,6 @@ Steps:-
 ### ***Limit Vars***
 - MAX_DL_LINK_SIZE - Max Directlink size in GBs. 
 - MAX_MEGA_LIMIT - Max Mega Download size in GBs.
-- MAX_TORRENT_SIZE - Max Torrent size in GBs.
 
 ### ***Optional Vars***
 
@@ -294,10 +286,6 @@ Steps:-
   - Default Value :- `20` 
   - Use :- Stops the user from downloading big playlists.
 
-- `MAX_TORRENT_SIZE`
-  - Values :- Max torrent size in GBs that is allowed. [Can be set from settings menu]
-  - Default Value :- `10`
-  - Use :- Stops the user from downloading big torrents.
 
 - `Mega Config`
   - MEGA_API - Mega Api get from mega.nz
@@ -331,7 +319,7 @@ Steps:-
 
 ## Commands
 
-    leech - To Leech a torrent or download a direct link
+    leech - To Leech or download a direct link
     ytdl - Donwload YouTube Video
     pytdl - Download YouTube Playlist
     about - About the bot
